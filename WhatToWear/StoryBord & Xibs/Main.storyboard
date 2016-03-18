@@ -1,25 +1,123 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oKe-3E-6We">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatToWear" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0p-1T-xyw" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="15" y="60" width="290" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="G0p-1T-xyw" secondAttribute="height" multiplier="29:30" id="Ppk-W5-mBr"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXE-zE-bwm" userLabel="View-Footer">
+                                <rect key="frame" x="40" y="381" width="240" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2h-wz-ZYS">
+                                        <rect key="frame" x="145" y="0.0" width="55" height="55"/>
+                                        <state key="normal" image="btn_like_normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="btn_like_pressed"/>
+                                        <connections>
+                                            <action selector="btnLikeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ze8-US-Esn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7b-YK-CIo">
+                                        <rect key="frame" x="40" y="0.0" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="GY1-My-nLC"/>
+                                        </constraints>
+                                        <state key="normal" image="btn_skip_normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="btn_skip_pressed"/>
+                                        <connections>
+                                            <action selector="btnDislikeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0bV-le-hBd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="f7b-YK-CIo" secondAttribute="bottom" id="1LA-oP-Cbi"/>
+                                    <constraint firstAttribute="height" constant="55" id="5UR-VQ-Zqk"/>
+                                    <constraint firstAttribute="width" constant="240" id="LM6-qw-q7e"/>
+                                    <constraint firstItem="a2h-wz-ZYS" firstAttribute="bottom" secondItem="f7b-YK-CIo" secondAttribute="bottom" id="NX6-48-eXM"/>
+                                    <constraint firstItem="f7b-YK-CIo" firstAttribute="top" secondItem="WXE-zE-bwm" secondAttribute="top" id="V8R-Dy-O8y"/>
+                                    <constraint firstItem="a2h-wz-ZYS" firstAttribute="top" secondItem="f7b-YK-CIo" secondAttribute="top" id="eSU-rK-rYB"/>
+                                    <constraint firstItem="f7b-YK-CIo" firstAttribute="leading" secondItem="WXE-zE-bwm" secondAttribute="leading" constant="40" id="eve-kf-TUo"/>
+                                    <constraint firstItem="a2h-wz-ZYS" firstAttribute="height" secondItem="f7b-YK-CIo" secondAttribute="height" id="pMZ-ib-bUj"/>
+                                    <constraint firstItem="a2h-wz-ZYS" firstAttribute="width" secondItem="f7b-YK-CIo" secondAttribute="width" id="u5n-MS-WFv"/>
+                                    <constraint firstItem="a2h-wz-ZYS" firstAttribute="leading" secondItem="f7b-YK-CIo" secondAttribute="trailing" constant="50" id="uZj-k7-kp8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WXE-zE-bwm" firstAttribute="top" secondItem="G0p-1T-xyw" secondAttribute="bottom" constant="21" id="MDZ-hG-M1C"/>
+                            <constraint firstItem="G0p-1T-xyw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="MQp-De-Xio"/>
+                            <constraint firstItem="G0p-1T-xyw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="SiY-Aw-xfD"/>
+                            <constraint firstAttribute="trailing" secondItem="G0p-1T-xyw" secondAttribute="trailing" constant="15" id="abL-Je-DxG"/>
+                            <constraint firstItem="WXE-zE-bwm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uSy-6E-NEV"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Ljn-MU-ZY6">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="Undo_BarButton" id="dxt-Yp-Y9p">
+                            <connections>
+                                <action selector="btnUndoAction:" destination="BYZ-38-t0r" id="7mn-od-rwd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="kolodaView" destination="G0p-1T-xyw" id="vnn-ho-grv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="737" y="961"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iVM-XS-tce">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oKe-3E-6We" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="FZ2-rg-dWY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Obn-mG-sOB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yAA-Fx-vWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="961"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Undo_BarButton" width="24" height="24"/>
+        <image name="btn_like_normal" width="32" height="32"/>
+        <image name="btn_like_pressed" width="32" height="32"/>
+        <image name="btn_skip_normal" width="32" height="32"/>
+        <image name="btn_skip_pressed" width="32" height="32"/>
+    </resources>
 </document>

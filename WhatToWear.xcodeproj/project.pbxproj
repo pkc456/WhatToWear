@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41C0D07E1C9BD5DC007C4725 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0D07D1C9BD5DC007C4725 /* ViewControllerExtensions.swift */; };
+		41C0D0801C9BD75F007C4725 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41C0D07F1C9BD75F007C4725 /* OverlayView.xib */; };
+		41C0D0821C9BD774007C4725 /* ExampleOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0D0811C9BD774007C4725 /* ExampleOverlayView.swift */; };
 		41DCE6591C987AFA00329113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DCE6581C987AFA00329113 /* AppDelegate.swift */; };
 		41DCE65D1C987B2C00329113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DCE65B1C987B2C00329113 /* LaunchScreen.storyboard */; };
 		41DCE65E1C987B2C00329113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DCE65C1C987B2C00329113 /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		28E7398A3E0303E6B24566D5 /* Pods-WhatToWear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWear.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWear/Pods-WhatToWear.release.xcconfig"; sourceTree = "<group>"; };
+		41C0D07D1C9BD5DC007C4725 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		41C0D07F1C9BD75F007C4725 /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
+		41C0D0811C9BD774007C4725 /* ExampleOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleOverlayView.swift; sourceTree = "<group>"; };
 		41DCE6421C9879BD00329113 /* WhatToWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatToWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DCE6581C987AFA00329113 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41DCE65B1C987B2C00329113 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +59,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		41C0D07B1C9BD5B8007C4725 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41C0D07C1C9BD5B9007C4725 /* View Controller */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		41C0D07C1C9BD5B9007C4725 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41C0D07D1C9BD5DC007C4725 /* ViewControllerExtensions.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
 		41DCE6391C9879BD00329113 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +97,7 @@
 		41DCE6441C9879BD00329113 /* WhatToWear */ = {
 			isa = PBXGroup;
 			children = (
+				41C0D07B1C9BD5B8007C4725 /* Extensions */,
 				41DCE6621C987BB700329113 /* Supporting Files */,
 				41DCE65F1C987B7100329113 /* View Controllers */,
 				41DCE65A1C987B2C00329113 /* StoryBord & Xibs */,
@@ -94,6 +117,7 @@
 		41DCE65A1C987B2C00329113 /* StoryBord & Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				41C0D07F1C9BD75F007C4725 /* OverlayView.xib */,
 				41DCE65B1C987B2C00329113 /* LaunchScreen.storyboard */,
 				41DCE65C1C987B2C00329113 /* Main.storyboard */,
 			);
@@ -103,6 +127,7 @@
 		41DCE65F1C987B7100329113 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				41C0D0811C9BD774007C4725 /* ExampleOverlayView.swift */,
 				41DCE6601C987B7100329113 /* ViewController.swift */,
 			);
 			path = "View Controllers";
@@ -188,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41DCE6661C987BB700329113 /* Info.plist in Resources */,
+				41C0D0801C9BD75F007C4725 /* OverlayView.xib in Resources */,
 				41DCE65E1C987B2C00329113 /* Main.storyboard in Resources */,
 				41DCE6651C987BB700329113 /* Assets.xcassets in Resources */,
 				41DCE6681C987BD200329113 /* Default-568h@2x.png in Resources */,
@@ -250,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C0D0821C9BD774007C4725 /* ExampleOverlayView.swift in Sources */,
 				41DCE6611C987B7100329113 /* ViewController.swift in Sources */,
+				41C0D07E1C9BD5DC007C4725 /* ViewControllerExtensions.swift in Sources */,
 				41DCE6591C987AFA00329113 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

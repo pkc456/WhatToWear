@@ -7,19 +7,37 @@
 //
 
 import UIKit
+import Koloda
 
 class ViewController: UIViewController {
+    @IBOutlet weak var kolodaView: KolodaView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.setUI()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK:- Set UI and delegates
+    func setUI(){
+        kolodaView.dataSource = self
+        kolodaView.delegate = self
     }
 
-
+    //MARK: IBActions methods
+    @IBAction func btnLikeAction(sender: UIButton) {
+        kolodaView?.swipe(SwipeResultDirection.Right)
+    }
+    
+    @IBAction func btnDislikeAction(sender: UIButton) {
+        kolodaView?.swipe(SwipeResultDirection.Left)
+    }
+    
+    @IBAction func btnUndoAction(sender: UIBarButtonItem) {
+        kolodaView?.revertAction()
+    }
 }
 
