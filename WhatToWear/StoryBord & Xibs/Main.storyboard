@@ -71,6 +71,7 @@
                         <constraints>
                             <constraint firstItem="WXE-zE-bwm" firstAttribute="top" secondItem="G0p-1T-xyw" secondAttribute="bottom" constant="21" id="MDZ-hG-M1C"/>
                             <constraint firstItem="G0p-1T-xyw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="MQp-De-Xio"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WXE-zE-bwm" secondAttribute="bottom" constant="68" id="PBx-tr-aE2"/>
                             <constraint firstItem="G0p-1T-xyw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="SiY-Aw-xfD"/>
                             <constraint firstAttribute="trailing" secondItem="G0p-1T-xyw" secondAttribute="trailing" constant="15" id="abL-Je-DxG"/>
                             <constraint firstItem="WXE-zE-bwm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uSy-6E-NEV"/>
@@ -82,9 +83,9 @@
                                 <action selector="btnUploadPhotoAction:" destination="BYZ-38-t0r" id="7sj-KE-AA3"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="undo" id="dxt-Yp-Y9p">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="dxt-Yp-Y9p">
                             <connections>
-                                <action selector="btnUndoAction:" destination="BYZ-38-t0r" id="7mn-od-rwd"/>
+                                <action selector="btnRefreshAction:" destination="BYZ-38-t0r" id="DhY-gf-8r1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

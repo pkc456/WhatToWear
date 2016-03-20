@@ -36,8 +36,8 @@ class ViewController: UIViewController {
         kolodaView?.swipe(SwipeResultDirection.Left)
     }
     
-    @IBAction func btnUndoAction(sender: UIBarButtonItem) {
-        kolodaView?.revertAction()
+    @IBAction func btnRefreshAction(sender: UIBarButtonItem) {
+        kolodaView?.reloadData()
     }
     
     @IBAction func btnUploadPhotoAction(sender: UIBarButtonItem)
@@ -45,19 +45,18 @@ class ViewController: UIViewController {
         let actionSheetController: UIAlertController = UIAlertController(title: nil, message: "Upload photo of T-shirt/shirt or pant", preferredStyle: .ActionSheet)
         
         let cancelActionButton: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel) { action -> Void in
-            print("Cancel")
         }
         actionSheetController.addAction(cancelActionButton)
         
         let gallaryActionButton: UIAlertAction = UIAlertAction(title: "Choose from gallery", style: .Default)
             { action -> Void in
-                print("Save")
+
         }
         actionSheetController.addAction(gallaryActionButton)
         
         let takePhotoActionButton: UIAlertAction = UIAlertAction(title: "Take photo", style: .Default)
             { action -> Void in
-                print("Delete")
+                
         }
         actionSheetController.addAction(takePhotoActionButton)
         self.presentViewController(actionSheetController, animated: true, completion: nil)

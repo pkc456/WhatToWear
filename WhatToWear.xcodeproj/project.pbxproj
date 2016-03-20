@@ -17,6 +17,8 @@
 		41DCE6651C987BB700329113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41DCE6631C987BB700329113 /* Assets.xcassets */; };
 		41DCE6661C987BB700329113 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41DCE6641C987BB700329113 /* Info.plist */; };
 		41DCE6681C987BD200329113 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41DCE6671C987BD200329113 /* Default-568h@2x.png */; };
+		41EC2B0C1C9F360700C864D8 /* ShirtJeanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC2B0B1C9F360700C864D8 /* ShirtJeanView.swift */; };
+		41EC2B0E1C9F365A00C864D8 /* ShirtJeanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41EC2B0D1C9F365A00C864D8 /* ShirtJeanView.xib */; };
 		F9FF0D9E49A992D2BF1AD833 /* Pods_WhatToWear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DD611B7DA5B74FEBE6BC34 /* Pods_WhatToWear.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		41DCE6641C987BB700329113 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41DCE6671C987BD200329113 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		41DCE6691C9883CE00329113 /* WhatToWear-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WhatToWear-Bridging-Header.h"; sourceTree = "<group>"; };
+		41EC2B0B1C9F360700C864D8 /* ShirtJeanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShirtJeanView.swift; sourceTree = "<group>"; };
+		41EC2B0D1C9F365A00C864D8 /* ShirtJeanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShirtJeanView.xib; sourceTree = "<group>"; };
 		54DD611B7DA5B74FEBE6BC34 /* Pods_WhatToWear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5B569D40182DDBBF192D20 /* Pods-WhatToWear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWear.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWear/Pods-WhatToWear.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +124,7 @@
 				41C0D07F1C9BD75F007C4725 /* OverlayView.xib */,
 				41DCE65B1C987B2C00329113 /* LaunchScreen.storyboard */,
 				41DCE65C1C987B2C00329113 /* Main.storyboard */,
+				41EC2B0D1C9F365A00C864D8 /* ShirtJeanView.xib */,
 			);
 			path = "StoryBord & Xibs";
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			children = (
 				41C0D0811C9BD774007C4725 /* ExampleOverlayView.swift */,
 				41DCE6601C987B7100329113 /* ViewController.swift */,
+				41EC2B0B1C9F360700C864D8 /* ShirtJeanView.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 				41DCE6651C987BB700329113 /* Assets.xcassets in Resources */,
 				41DCE6681C987BD200329113 /* Default-568h@2x.png in Resources */,
 				41DCE65D1C987B2C00329113 /* LaunchScreen.storyboard in Resources */,
+				41EC2B0E1C9F365A00C864D8 /* ShirtJeanView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +285,7 @@
 			files = (
 				41C0D0821C9BD774007C4725 /* ExampleOverlayView.swift in Sources */,
 				41DCE6611C987B7100329113 /* ViewController.swift in Sources */,
+				41EC2B0C1C9F360700C864D8 /* ShirtJeanView.swift in Sources */,
 				41C0D07E1C9BD5DC007C4725 /* ViewControllerExtensions.swift in Sources */,
 				41DCE6591C987AFA00329113 /* AppDelegate.swift in Sources */,
 			);
